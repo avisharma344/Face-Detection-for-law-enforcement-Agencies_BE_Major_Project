@@ -1,26 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.1.3
--- https://www.phpmyadmin.net/
---
--- Host: localhost
--- Generation Time: May 26, 2022 at 10:04 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.1.4
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
---
--- Database: `criminaldb`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `criminaldata`
---
-
 CREATE TABLE `criminaldata` (
   `Criminal-ID` int(6) NOT NULL,
   `Address` varchar(40) NOT NULL,
@@ -81,13 +61,6 @@ INSERT INTO `missingdata` (`Report-ID`, `Name`, `Father's Name`, `Address`, `Pho
 (908078, 'rajesh yadav', 'brijesh yadav', 'mumbai', 0, 'male', '2020-09-09', 'mole on nose', '2020-09-09', 'delhi'),
 (8749, 'h', 'h', 'h', 0, 'm', '2020-09-09', 'njk', '2020-09-09', 'fg'),
 (987896, 'dd', 'd', 'd', 987987987, 'd', '2020-09-09', 'd', '2020-09-09', 'd');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user_information`
---
-
 CREATE TABLE `user_information` (
   `id` int(11) NOT NULL,
   `first_name` varchar(255) NOT NULL,
@@ -96,11 +69,6 @@ CREATE TABLE `user_information` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `user_information`
---
-
 INSERT INTO `user_information` (`id`, `first_name`, `last_name`, `gender`, `username`, `password`) VALUES
 (14, 'Danish', 'Ali', '', 'masterprograming', 'Welcome@12'),
 (15, 'Mansi', 'Mishra', '', 'mansi', 'mansi0904'),
@@ -117,24 +85,8 @@ INSERT INTO `user_information` (`id`, `first_name`, `last_name`, `gender`, `user
 (26, 'manu', 'bin', 'Male', 'sa', 'sa'),
 (27, 'z', 'z', 'Male', 'z', 'z'),
 (28, 'g', 'g', 'Male', 'g', 'g');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `user_information`
---
 ALTER TABLE `user_information`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `user_information`
---
 ALTER TABLE `user_information`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
