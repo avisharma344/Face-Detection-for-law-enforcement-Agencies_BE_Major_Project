@@ -70,3 +70,15 @@ def signup():
                         
                   except Exception as es:
                         messagebox.showerror("Error" , f"Error Dui to : {str(es)}", parent = winsignup)
+                        # close signup function			
+      def switch():
+            winsignup.destroy()
+
+      # clear data function
+      def clear():
+            first_name.delete(0,END)
+            last_name.delete(0,END)
+            var.set("Male")
+            user_name.delete(0,END)
+            password.delete(0,END)
+            very_pass.delete(0,END)
