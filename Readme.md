@@ -5,3 +5,5 @@ This is the major project for final year student of Ramrao Adik Institute of Tec
 
 Problem Statement:
 Develop an Desktop application or a native mobile application to demonstrate application of Face Recognition technology.
+
+Solution:
