@@ -16,10 +16,10 @@ CREATE TABLE `criminaldata` (
 
 --
 -- Dumping data for table `criminaldata` as it is
+--git commit -m "Criminal Insertion Feature added"
 --
   
-git commit -m "Criminal Insertion Feature added"
-  INSERT INTO `criminaldata` (`Criminal-ID`, `Address`, `Phone`, `Name`, `Father's Name`, `Gender`, `DOB(yyyy-mm-dd)`, `Crimes Done`, `Date of Arrest`, `Place of Arrest`) VALUES
+INSERT INTO `criminaldata` (`Criminal-ID`, `Address`, `Phone`, `Name`, `Father's Name`, `Gender`, `DOB(yyyy-mm-dd)`, `Crimes Done`, `Date of Arrest`, `Place of Arrest`) VALUES
 (123456, 'jaipur', 0, 'vivek rati', 'mahesh rathi', 'male', '2000-09-07', 'fraud', '2020-12-09', 'chhattisgarh'),
 (234, 'jabalpur', 0, 'jaydeep singh', 'mahendra singh', 'male', '1970-09-08', 'fraud', '2009-08-07', 'jabalpur'),
 (567432, 'delhi', 0, 'pranav verma', 'ramesh verma', 'male', '2000-05-04', 'murder', '2000-05-04', 'aagra'),
