@@ -31,3 +31,20 @@ INSERT INTO `criminaldata` (`Criminal-ID`, `Address`, `Phone`, `Name`, `Father's
 (4, 'g', 0, 'v', 'v', 'v', '2020-09-09', 'm', '2020-09-09', 'g'),
 (98, 'v', 0, 'c', 'c', 'c', '2020-09-09', 'f', '2020-09-09', 'f'),
 (4, 'g', 47, 'cfc', 'fre', 'm', '2020-09-09', 'm', '2020-09-09', 'v');
+
+--
+-- Table structure for table `missingdata`
+--
+
+CREATE TABLE `missingdata` (
+  `Report-ID` int(11) NOT NULL,
+  `Name` varchar(30) NOT NULL,
+  `Father's Name` varchar(30) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `Phone` int(12) NOT NULL,
+  `Gender` varchar(10) NOT NULL,
+  `DOB` date NOT NULL,
+  `Identification` varchar(50) NOT NULL,
+  `Date of Missing` date NOT NULL,
+  `Place of Missing` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
